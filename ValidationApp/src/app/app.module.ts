@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MyErrorHandler } from './my-error-handler';
 
 @NgModule({
   declarations: [
@@ -11,9 +10,7 @@ import { MyErrorHandler } from './my-error-handler';
   imports: [
     BrowserModule
   ],
-  providers: [
-    { provide: ErrorHandler, useClass: MyErrorHandler },
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
