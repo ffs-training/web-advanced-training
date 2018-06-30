@@ -14,11 +14,7 @@ export class AppComponent {
    * ボタンクリック処理
    */
   public onClick() {
-    if (this.getRandomFlag()) {
-      this.clickTimes++;
-    } else {
-      throw new Error('flag is FALSE!');
-    }
+    this.clickTimes++;
     console.log(this.clickTimes + '回カウントアップされました。');
   }
 
@@ -28,10 +24,7 @@ export class AppComponent {
   private getRandomFlag(): boolean {
     const value = Math.random(); // ０～1のランダムな値
     if (value < 0.2) { // 20%の確率でfalseを返す
-
       return false;
-    } else if (value < 0.4) { // 20%の確率でエラー発生
-      throw new Error('Error in Creating random Flag!');
     }
     return true;
   }

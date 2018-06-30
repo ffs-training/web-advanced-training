@@ -15,7 +15,7 @@ export class MyErrorHandler extends ErrorHandler {
      * @param error
      */
     public handleError(error: string): void {
-        window.alert(error);
+        // ここにエラー処理を書く
     }
 
 }
