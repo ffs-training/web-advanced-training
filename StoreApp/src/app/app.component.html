@@ -1,0 +1,24 @@
+<div>
+  <div>セッションストレージ</div>
+  <div>
+    <span>key</span>
+    <input [(ngModel)]="sessionKey">
+    <span>value</span>
+    <input [(ngModel)]="sessionValue">
+  </div>
+  <button (click)="sessionSet()">set</button>
+  <button (click)="sessionGet()">get</button>
+</div>
+<br>
+<div>
+  <div>ローカルストレージ</div>
+  <div>
+    <span>key</span>
+    <input [(ngModel)]="localKey">
+    <span>value</span>
+    <input [(ngModel)]="localValue">
+  </div>
+  <button (click)="localSet()">set</button>
+  <button (click)="localGet()">get</button>
+</div>
+
